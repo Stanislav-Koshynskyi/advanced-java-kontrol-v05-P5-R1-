@@ -7,8 +7,8 @@ public class OrderItem {
     private Money money;
     private String item;
     public OrderItem(Money money, String item) {
-        setMoney();
-        setItem();
+        setMoney(money);
+        setItem(item);
     }
     public void  setMoney(Money money) {
         if(money == null){
@@ -16,7 +16,7 @@ public class OrderItem {
         }
         this.money = money;
     }
-    public void setItem() {
+    public void setItem(String item) {
         if(money == null){
             throw new IllegalArgumentException("Money is null");
         }
