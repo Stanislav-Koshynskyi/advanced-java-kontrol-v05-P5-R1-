@@ -6,6 +6,7 @@ public class Order {
     private final OrderItem[] orderItems;
     @Getter
     private Email email;
+    private Long id;
     public OrderItem[] getOrderItems() {
         return orderItems.clone();
     }
