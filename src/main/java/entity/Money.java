@@ -6,8 +6,6 @@ import lombok.Setter;
 
 import java.math.BigDecimal;
 @Getter
-@Setter
-@AllArgsConstructor
 public class Money {
     private BigDecimal money;
     public Money(BigDecimal money) {
