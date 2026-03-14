@@ -22,4 +22,13 @@ public class OrderItem {
         }
         this.item = item;
     }
+    public String toString(){
+        return money.toString() + " " + item;
+    }
+    public boolean Equal(OrderItem o){
+        return money.equals(o.money) && item.equals(o.item);
+    }
+    public int hashCode(){
+        return money.hashCode() + item.hashCode();
+    }
 }

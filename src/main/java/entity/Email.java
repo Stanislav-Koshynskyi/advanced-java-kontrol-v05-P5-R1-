@@ -2,6 +2,8 @@ package entity;
 
 import lombok.Getter;
 
+import java.util.Objects;
+
 @Getter
 public class Email {
     private String email;
@@ -16,5 +18,9 @@ public class Email {
     }
     private Email(String email) {
         setEmail(email);
+    }
+    public int hashCode() {
+        int hash = 7;
+        return  97 * hash + Objects.hashCode(this.email);
     }
 }
